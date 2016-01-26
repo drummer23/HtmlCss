@@ -1,0 +1,16 @@
+.outer {
+  background-color: grey;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.inner {
+  background-color: blue;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 0px;
+}
