@@ -1,0 +1,141 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/Strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de"> <head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="Author" content="Thomas Pehlgrim" />
+<meta name="description" content="Layouten ohne Tabellen, CSS 4 You - The Finest in Stylesheets: Workshops und Referenzen zu CSS" />
+<meta name="keywords" content="Tabellenloses Layout, ohne Tabellen, CSS 4 You, CSS for You, CSS 1, CSS 2, CSS Level 1, CSS Level 2, Cascading Stylesheets, Referenz, Gestaltung ohne Tabellen, tabellenloses Design, div zentrieren" />
+<style type="text/css"><!--
+body
+{
+ font-family:Verdana;
+ font-size:12px;
+ background-color:#003333;
+ text-align:center;
+}
+
+h1 {font-size:18px;color:#ffffff;margin:0px;}
+h2 {font-size:14px;color:#ffffff;}
+h3 {font-size:14px;color:#ffffff;}
+p {margin-top:0px;}
+
+/* Für Quellcode-Beispiele im Text */
+code
+{
+ font-size:14px;
+ color:#ccffff;
+}
+
+/* Der Kasten mit dem Quellcode */
+pre
+{
+ font-size:14px;
+ color:#ccffff;
+}
+
+a:link, a:visited, a:active, a:hover
+{
+  text-decoration:underline;
+  font-weight:bold;
+  color:#ffffff;
+  font-size:12px;
+}
+a:active, a:hover
+{
+  color:#ff9200;
+}
+a.menu:link, a.menu:visited
+{
+  color:#ff9200;
+}
+a.menu:active, a.menu:hover
+{
+  color:#eeeeee;
+}
+
+/* Die Titelzeile */
+#title {
+/*padding-top:15px;*/
+height:24px;
+}
+
+/* Das Menü */
+#menu {
+color:#ffffff;
+text-align:center;
+padding:10px 0px;
+border-top:1px solid #669999;
+clear:right;
+}
+
+/* Der Inhalt */
+#content {
+border:1px solid #ffffff;
+background-color:#669999;
+padding:5px;
+color:#ffffff;
+}
+//--></style>
+<title>CSS 4 You - The Finest in Stylesheets: Layouten ohne Tabellen</title>
+</head>
+<body>
+
+<!--  Gesamter Inhalt  -->
+<div style="width:760px;margin:0px auto;text-align:left;">
+<img src="float1.gif" style="float:right;width:156px; height:39px;" alt="Logo" />
+<h1 id="title">Ein Logo neben der Titelzeile, 760 Pixel breit</h1><p style="color:white;clear:right;">AAA</p>
+
+
+<!--  Menü  -->
+<div id="menu">
+<a class="menu" href="#">HYPERLINK 1</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a class="menu" href="#">HYPERLINK 2</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a class="menu" href="#">HYPERLINK 3</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a class="menu" href="#">HYPERLINK 4</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a class="menu" href="#">HYPERLINK 5</a>
+</div>
+
+<!-- Inhalt -->
+<div id="content">
+<h2>Ein Logo neben der Titelzeile, 760 Pixel breit</h2>
+<p>Ein Logo gehört auf fast jede Seite und es lässt sich ganz einfach neben dem Titel
+plazieren.</p>
+<pre>
+
+&lt;img src=&quot;logo.gif&quot; style=&quot;float:right;width:156px;height:39px;&quot; alt=&quot;Logo&quot;&gt;
+&lt;h1 id=&quot;title&quot;&gt;Ein Logo neben der Titelzeile, 760 Pixel breit&lt;/h1&gt;
+
+</pre>
+<p>Die Eigenschaft <a href="../float.html">float</a> plaziert Elemente
+auf der Seite und lässt andere vorbeifließen. In diesem Fall wird dem Logo
+<code>float:right</code> zugewiesen. Das bedeutet, dass das Logo rechtsbündig plaziert
+wird und der folgende Inhalt, in diesem Fall das <em>&lt;h1&gt;</em>-Tag,
+links vorbeifließt, bzw. links steht.<br />
+Mit <a href="../clear.html">clear</a> beendest du diesen Effekt,
+d.h. für das erste Element, dass nicht mehr floaten soll, musst du <code>clear</code>
+notieren. Deshalb ist in den Stylesheet-Angaben für den <em>&lt;div&gt;</em>-Container
+des Menüs u.a. folgendes eingefügt:</p>
+<pre>
+#menu {
+ clear:left;
+ border-top:1px solid #669999;
+}
+</pre>
+<p>Der Rahmen unter der Titelzeile ist in Wirklichkeit ein <a href="../border-top.html">Rahmen oben</a>
+im Menü. Da die Titelzeile aus zwei Elementen besteht, ist dies die elegantere Lösung.
+Und damit der Inhalt des <em>&lt;h1&gt;</em>-Tags schön nach unten
+gegen den Rahmen ausgerichtet ist, benötigst du nur eine <a href="../height.html">Höhenangabe</a> und einen
+<a href="../padding-top.html">Innenabstand von oben</a>:</p>
+<pre>
+/* Die Titelzeile */
+#title {
+padding-top:15px;
+height:24px;
+}
+</pre>
+<p style="text-align:left;"><a class="prev" href="index.html#example">Zurück</a></p>
+</div>
+</div>
+</body>
+</html>

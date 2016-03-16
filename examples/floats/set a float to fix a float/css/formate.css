@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/*Basis* -> einfache Elementenselektoren, Überschriften*/
+
+*{
+	margin: 0;
+	padding:0;
+	border:0;
+}
+
+html{
+	min-height: 101%;
+}
+
+body {
+	color:#fff;
+	background-color:#D9B23D;
+	background-image: url(../img/bg-body.jpg);
+	background-repeat: no-repeat;
+	font-family:Verdana, Arial, sans-serif;
+	font-size:100%;
+}
+h1{
+	color:#315731;
+	padding-bottom:12px;
+	padding-top:20px;
+	font-family: Denk One,sans-serif;
+	font-size:30px;
+	font-weight:bold;
+	}
+	/*verschienene Fontformate
+		@font-face {
+	    font-family: "CalligraphyFLFRegular";
+	    src: url("CalligraphyFLF.eot");
+	    src: local("CalligraphyFLF Regular"), local("CalligraphyFLF"), url("CalligraphyFLF.ttf") format("truetype");
+	}
+	*/
+
+h2{
+	font-size:16px;
+	margin-top:12px;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+p{
+	padding:12px 0 12px 0;
+}
+
+address{
+	padding:12px;
+	border-top:solid white 1px;
+}
+
+li {
+
+	list-style-type: none;
+}
+
+/*Layout*/
+
+#wrapper{
+	margin:auto;
+	margin-top:40px;
+	/*Seite einmitten*/
+	background-color:#194026;
+	width:960px;
+	/*Breite der Webseite bestimmen mit id="wrapper"*/
+}
+
+#header{
+	text-align:right;
+	background-color:#fff;
+	padding:12px;
+}
+#nav{
+	background-color:#194026;
+	width:200px;
+	float: left;
+}
+
+#footer{
+	background-color:#537748;
+	clear:both;
+}
+
+#content{
+	background-color:#838C3B;
+	width:692px;
+	font-family:Verdana;
+	padding:12px 45px 45px 23px;
+	font-size:14px;
+	line-height:20px;
+	float:left;
+	/*height:700px;
+	overflow:auto;*/
+
+}
+
+/*Module*/
+#nav a:link{
+	color:yellow;
+	display:block;
+}
+#nav a:visited{
+	color:pink;
+	display:block;
+}
+#nav a:hover{
+	background-color:black;
+	color:white;
+	display:block;
+}
+#nav a:active
+	{color:yellow;
+	display:block;
+}
+
+#content a {
+	text-decoration: underline;
+}
+.hervorheben{
+	background-color:#fc0; 
+	color:#333;
+}
+.spezial{
+	border: 1px solid blue;
+}
+
+#content li{
+	list-style-image:url(../img/flower.png);
+	padding-left:2px;
+	margin-left: 31px;
+}
+#nav ul{
+	line-height: 24px; 
+
+
+}
+.fltlt
+{
+	float: left;
+	margin-right: 20px;
+}
+.bilderrahmen {
+	border: 3px yellow solid;
+
+}
+.ausblenden{
+	display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Status*/
+/*Themen*/

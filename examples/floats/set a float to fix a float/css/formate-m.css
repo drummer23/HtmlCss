@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body{
+	bevavior:url("csshover.htc");
+	background-color:#838c3b;
+}
+#nav, #nav ul{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+#nav li{
+	width:128px;
+	background-color: pink;
+	border: 1px solid blue;
+	float:left;
+}
+#nav li ul{
+	display:none;
+}
+#nav li:hover ul{
+	display:block;
+
+
+
+};

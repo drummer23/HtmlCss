@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+		.wrapper
+		{
+			width: 760px;
+			margin: 0px auto;
+		}
+
+
+		.box
+		{
+			background-color: red;
+			width: 60px;
+			height: 60px;
+			margin: 10px;
+		}
+
+		.left
+		{
+			float: left;
+		}
+
+		.right
+		{
+			float: right;
+		}
+
+ 
+
+	</style>
+
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="box left"></div>
+<div class="box left"></div>
+<div class="box right"></div>
+
+In the example above, the floated elements are shorter vertically than the block of text they're floated within. However, if the text was not long enough to wrap below the bottom of all the floats, we might see unanticipated effects. If the paragraph above, for instance, only read "Lorem ipsum dolor sit amet," and was followed by another heading of the same style as the "Floats Example" heading, the second heading would appear between the red boxes. Most likely, we want the next heading to be aligned all the way to the left. To accomplish that, we'd need to clear the float
+
+</div>
+
+</body>
+</html>
